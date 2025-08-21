@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navbar Responsif</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css" />
 </head>
 
 <body class="bg-gray-900 ">
@@ -13,14 +17,14 @@
     <nav class="p-4 ">
         <div class="container mx-auto flex justify-between items-center">
             <!-- Logo -->
-            <div class="text-white text-lg font-bold">LogoKu</div>
+            <div class="text-blue-400 text-lg font-bold ">LogoKu</div>
 
             <!-- Menu desktop -->
             <ul class="hidden sm:flex gap-6 text-white">
-                <li><a href="#" class="hover:underline">Home</a></li>
-                <li><a href="#" class="hover:underline">About</a></li>
-                <li><a href="#" class="hover:underline">Services</a></li>
-                <li><a href="#" class="hover:underline">Contact</a></li>
+                <li><a href="#" class="hover:text-blue-400 duration-300 ease-out">Home</a></li>
+                <li><a href="#" class="hover:text-blue-400 duration-300 ease-out">About</a></li>
+                <li><a href="#" class="hover:text-blue-400 duration-300 ease-out">Services</a></li>
+                <li><a href="#" class="hover:text-blue-400 duration-300 ease-out">Contact</a></li>
             </ul>
 
             <!-- Hamburger (mobile) -->
@@ -30,7 +34,8 @@
         </div>
 
         <!-- Menu mobile -->
-        <div id="menu" class="max-h-0 overflow-hidden transition-all duration-300 transition-all duration-300  sm:hidden mt-3">
+        <div id="menu"
+            class="max-h-0 overflow-hidden transition-all duration-300 transition-all duration-300  sm:hidden mt-3">
             <ul class="flex flex-col gap-2 text-white">
                 <li><a href="#" class="block px-2 py-1 hover:bg-blue-500 rounded ">Home</a></li>
                 <li><a href="#" class="block px-2 py-1 hover:bg-blue-500 rounded">About</a></li>
@@ -41,21 +46,37 @@
     </nav>
 
     <!-- Hero Section -->
-    <div class="p-4 text-white flex items-center">
-        <div class="flex flex-col sm:flex-row items-center gap-3">
-            <div class="flex-1 w-64 h-64 overflow-hidden"><img src="coba.png" class="rounded-md" alt=""></div>
-            <div class="flex-1">
-                <div class="font-bold text-4xl">Irham Izza</div>
-                <div class="text-3xl">Full Stack Developer</div>
-                <div class="text-gray-300">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima eaque
+    <div class="p-4 text-white">
+        <div class="flex flex-col sm:flex-row md:px-20 items-center gap-3 animate-fadeInUp">
+            <div class="flex-1 flex flex-col gap-3 ">
+                <!-- <div class=" text-md">Introdution</div> -->
+                <div class="font-bold text-4xl">Hi,I'm <span class="text-blue-400">Irham Izza</span></div>
+                <div class="text-3xl text-blue-400">Full Stack Developer</div>
+                <div class="text-gray-300 max-w-[550px]">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Minima eaque
                     explicabo, libero, nesciunt blanditiis alias sapiente quibusdam laudantium quas nihil aperiam modi
                     esse accusantium sit reiciendis
                     provident? Quo, expedita qui?
                 </div>
+                <div class="flex gap-2">
+                    <a href="https://github.com/IrhamIzza"
+                        class="ph ph-github-logo text-lg transition-all duration-300 ease-out hover:scale-105 hover:text-blue-400"></a>
+                    <a href="https://www.linkedin.com/in/irham-izza-syany-5b5288233/"
+                        class="ph ph-linkedin-logo text-lg transition-all duration-300 ease-out hover:scale-105 hover:text-blue-400"></a>
+                </div>
+                <div class="flex gap-2 text-sm md:text-base text-blue-400">
+                    <div
+                        class="border border-blue-400 p-2 rounded-xl cursor-pointer  transition-all duration-300 ease-out hover:scale-105">
+                        CONTACT</div>
+                    <div
+                        class="border border-blue-400 p-2 rounded-xl cursor-pointer  transition-all duration-300 ease-out hover:scale-105">
+                        DONWLOAD CV</div>
+                </div>
+            </div>
+            <div class="flex-1 md:flex-3 pb-2">
+                <img src="coba.png" class="rounded-md w-56 sm:w-[300px] mx-auto" alt="">
             </div>
         </div>
-    </div>
-    <div class="w-40 h-20 bg-blue-200 overflow-hidden">
     </div>
     <script>
         // Toggle menu mobile
@@ -67,7 +88,23 @@
             menu.classList.toggle("max-h-60");
         });
     </script>
-
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    keyframes: {
+                        fadeInUp: {
+                            "0%": { opacity: 0, transform: "translateY(20px)" },
+                            "100%": { opacity: 1, transform: "translateY(0)" },
+                        },
+                    },
+                    animation: {
+                        fadeInUp: "fadeInUp 0.8s ease-out forwards",
+                    },
+                },
+            },
+        };
+    </script>
 </body>
 
 </html>
