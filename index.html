@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navbar Responsif</title>
+    <title>Portofolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" type="text/css"
         href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css" />
@@ -12,7 +12,7 @@
         href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css" />
 </head>
 
-<body class="bg-gray-900 ">
+<body class="bg-gray-900 animate-fadeInUp">
     <!-- Navbar -->
     <nav class="p-4 ">
         <div class="container mx-auto flex justify-between items-center">
@@ -46,11 +46,14 @@
     </nav>
 
     <!-- Hero Section -->
-    <div class="p-4 text-white">
+    <div class="p-4 text-white flex flex-col gap-10">
+        <!-- 1 -->
         <div class="flex flex-col sm:flex-row md:px-20 items-center gap-3 animate-fadeInUp">
             <div class="flex-1 flex flex-col gap-3 ">
                 <!-- <div class=" text-md">Introdution</div> -->
-                <div class="font-bold text-4xl">Hi,I'm <span class="text-blue-400">Irham Izza</span></div>
+                <div class="font-bold text-4xl">Hi,I'm <span
+                        class="text-blue-400 inline-block transition-all duration-300 hover:scale-105">Irham Izza</span>
+                </div>
                 <div class="text-3xl text-blue-400">Full Stack Developer</div>
                 <div class="text-gray-300 max-w-[550px]">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                     Minima eaque
@@ -66,16 +69,147 @@
                 </div>
                 <div class="flex gap-2 text-sm md:text-base text-blue-400">
                     <div
-                        class="border border-blue-400 p-2 rounded-xl cursor-pointer  transition-all duration-300 ease-out hover:scale-105">
+                        class="border border-white bg-blue-500 text-white p-2 rounded-xl cursor-pointer  transition-all duration-300 ease-out hover:scale-105">
                         CONTACT</div>
                     <div
                         class="border border-blue-400 p-2 rounded-xl cursor-pointer  transition-all duration-300 ease-out hover:scale-105">
                         DONWLOAD CV</div>
                 </div>
             </div>
-            <div class="flex-1 md:flex-3 pb-2">
-                <img src="coba.png" class="rounded-md w-56 sm:w-[300px] mx-auto" alt="">
+            <div class="flex-1 md:flex-3">
+                <img src="/img/coba.png" class="rounded-md w-56 sm:w-[300px] mx-auto" alt="">
             </div>
+        </div>
+        <!-- 2 -->
+        <div class="md:px-10 lg:px-20">
+            <div class="flex gap-4 ">
+                <div class="flex-1 hidden sm:block">
+                    <img src="img/aku1.png" class=" max-h-72 flex mx-auto" alt="">
+                </div>
+                <div class="flex-1">
+                    <div class="text-center sm:text-left text-2xl font-bold py-3 ">About Me</div>
+                    <p class="text-gray-300">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad voluptatibus velit harum molestiae
+                        quam, ab quos! Ea error veritatis sapiente totam deserunt adipisci qui incidunt. Ad soluta
+                        minima aliquam non! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex autem rerum ut
+                        ad, quam tenetur est. Corporis temporibus amet officiis beatae excepturi aperiam, iure eius,
+                        recusandae, eaque nihil tempora praesentium.</p>
+                </div>
+            </div>
+        </div>
+        <!-- 3 -->
+        <div class="md:px-10 lg:px-20">
+            <div class="text-center text-2xl font-bold py-3">MY PROJECT</div>
+            <div class="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 justify-between gap-4">
+                <!-- projek 1 -->
+                <div class="bg-gray-800 rounded-lg relative group">
+                    <img src="/img/project1.PNG" class="rounded-lg" alt="">
+                    <div class="p-4 flex flex-col gap-2">
+                        <div class="text-center text-2xl">Website Granesia</div>
+                        <div class="text-gray-300">Website mengenai informasi tata cara menanam
+                            bermacam-macam tanaman hias dalam bentuk artikel yang dapat dijadikan referensi bagi
+                            pengguna untuk merawat dan budidaya.</div>
+                        <div class="border border-gray-400"></div>
+                        <div class="text-gray-300">Tools : <span class="text-blue-400">Laravel, Boostrap</span></div>
+                    </div>
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300">
+                        <a href="#" class="text-white text-5xl">
+                            <i class="ph ph-arrow-square-out"></i>
+                        </a>
+                    </div>
+
+                </div>
+                <!-- projek 2 -->
+                <div class="bg-gray-800 rounded-lg relative group">
+                    <img src="/img/project3.PNG" class="rounded-lg" alt="">
+                    <div class="p-4 flex flex-col gap-2">
+                        <div class="text-center text-2xl">Website Livescore</div>
+                        <div class="text-gray-300">Website yang menampilkan hasil pertandingan olahraga secara langsung
+                            (real-time). Berisi skor terkini, waktu pertandingan, atau klasemen.</div>
+                        <div class="border border-gray-400"></div>
+                        <div class="text-gray-300">Tools : <span class="text-blue-400">React, Tailwind</span></div>
+                    </div>
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300">
+                        <a href="#" class="text-white text-5xl">
+                            <i class="ph ph-arrow-square-out"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- projek 3 -->
+                <div class="bg-gray-800 rounded-lg relative group">
+                    <img src="/img/project2.PNG" class="rounded-lg" alt="">
+                    <div class="p-4 flex flex-col gap-2">
+                        <div class="text-center text-2xl">Website Movie</div>
+                        <div class="text-gray-300">Website pencarian movie ini memudahkan menemukan informasi
+                            film dari judul. Dilengkapi dengan detail film</div>
+                        <div class="border border-gray-400"></div>
+                        <div class="text-gray-300">Tools : <span class="text-blue-400">Jquery, Boostrap, js</span></div>
+                    </div>
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300">
+                        <a href="https://irhamizza.github.io/Website_Movie/" class="text-white text-5xl">
+                            <i class="ph ph-arrow-square-out"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- projek 4 -->
+                <div class="bg-gray-800 rounded-lg relative group">
+                    <img src="/img/project2.PNG" class="rounded-lg" alt="">
+                    <div class="p-4 flex flex-col gap-2">
+                        <div class="text-center text-2xl">Website Movie</div>
+                        <div class="text-gray-300">Website pencarian movie ini memudahkan menemukan informasi
+                            film dari judul. Dilengkapi dengan detail film</div>
+                        <div class="border border-gray-400"></div>
+                        <div class="text-gray-300">Tools : <span class="text-blue-400">Jquery, Boostrap, js</span></div>
+                    </div>
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300">
+                        <a href="https://irhamizza.github.io/Website_Movie/" class="text-white text-5xl">
+                            <i class="ph ph-arrow-square-out"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- projek 5 -->
+                <div class="bg-gray-800 rounded-lg relative group">
+                    <img src="/img/project2.PNG" class="rounded-lg" alt="">
+                    <div class="p-4 flex flex-col gap-2">
+                        <div class="text-center text-2xl">Website Movie</div>
+                        <div class="text-gray-300">Website pencarian movie ini memudahkan menemukan informasi
+                            film dari judul. Dilengkapi dengan detail film</div>
+                        <div class="border border-gray-400"></div>
+                        <div class="text-gray-300">Tools : <span class="text-blue-400">Jquery, Boostrap, js</span></div>
+                    </div>
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300">
+                        <a href="https://irhamizza.github.io/Website_Movie/" class="text-white text-5xl">
+                            <i class="ph ph-arrow-square-out"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- projek 6 -->
+                <div class="bg-gray-800 rounded-lg relative group">
+                    <img src="/img/project2.PNG" class="rounded-lg" alt="">
+                    <div class="p-4 flex flex-col gap-2">
+                        <div class="text-center text-2xl">Website Movie</div>
+                        <div class="text-gray-300">Website pencarian movie ini memudahkan menemukan informasi
+                            film dari judul. Dilengkapi dengan detail film</div>
+                        <div class="border border-gray-400"></div>
+                        <div class="text-gray-300">Tools : <span class="text-blue-400">Jquery, Boostrap, js</span></div>
+                    </div>
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300">
+                        <a href="https://irhamizza.github.io/Website_Movie/" class="text-white text-5xl">
+                            <i class="ph ph-arrow-square-out"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
     <script>
