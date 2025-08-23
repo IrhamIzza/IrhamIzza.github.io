@@ -69,7 +69,7 @@
                 </div>
                 <div class="flex gap-2 text-sm md:text-base text-blue-400">
                     <div
-                        class="border border-white bg-blue-500 text-white p-2 rounded-xl cursor-pointer  transition-all duration-300 ease-out hover:scale-105">
+                        class="bg-blue-500 text-white p-2 rounded-xl cursor-pointer  transition-all duration-300 ease-out hover:scale-105">
                         CONTACT</div>
                     <div
                         class="border border-blue-400 p-2 rounded-xl cursor-pointer  transition-all duration-300 ease-out hover:scale-105">
@@ -217,33 +217,55 @@
             <div class="max-w-6xl mx-auto text-center">
                 <h2 class="text-3xl font-bold mb-8">Skills</h2>
                 <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+                    <div class="p-6 bg-gray-800 rounded-xl shadow hover:scale-105 transition-transform">
+                        <img src="img/Logo/Laravel.png" alt="Laravel" class="w-12 h-12 mx-auto mb-2" />
+                        <p class="text-sm font-medium">Laravel</p>
+                    </div>
+                    <div class="p-6 bg-gray-800 rounded-xl shadow hover:scale-105 transition-transform">
+                        <img src="img/Logo/Tailwind.png" alt="Tailwind" class="w-12 h-12 mx-auto mb-2" />
+                        <p class="text-sm font-medium">Tailwind CSS</p>
+                    </div>
+                    <div class="p-6 bg-gray-800 rounded-xl shadow hover:scale-105 transition-transform">
+                        <img src="img/Logo/vue.png" alt="Node.js" class="w-12 h-12 mx-auto mb-2" />
+                        <p class="text-sm font-medium">Vue.js</p>
+                    </div>
                     <div class="p-6 bg-gray-800 rounded-xl hover:scale-105 transition-transform">
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
                             alt="React" class="w-12 h-12 mx-auto mb-2" />
                         <p class="text-sm font-medium">React</p>
                     </div>
 
-                    <div class="p-6 bg-gray-800 rounded-xl shadow hover:scale-105 transition-transform">
-                        <img src="img/Logo/Laravel.png"
-                            alt="Laravel" class="w-12 h-12 mx-auto mb-2" />
-                        <p class="text-sm font-medium">Laravel</p>
-                    </div>
-
-                    <div class="p-6 bg-gray-800 rounded-xl shadow hover:scale-105 transition-transform">
-                        <img src="img/Logo/Tailwind.png"
-                            alt="Tailwind" class="w-12 h-12 mx-auto mb-2" />
-                        <p class="text-sm font-medium">Tailwind CSS</p>
-                    </div>
-
-                    <div class="p-6 bg-gray-800 rounded-xl shadow hover:scale-105 transition-transform">
-                        <img src="img/Logo/vue.png"
-                            alt="Node.js" class="w-12 h-12 mx-auto mb-2" />
-                        <p class="text-sm font-medium">Vue.js</p>
-                    </div>
-
                 </div>
             </div>
         </section>
+        <!-- 5 -->
+        <h2 class="text-3xl font-bold flex mx-auto">Contact</h2>
+        <section class="bg-gray-800 rounded-md flex p-4 gap-4 max-w-6xl mx-auto sm:flex-row fl">
+            <div class="flex-1">
+                <!-- Contact Form -->
+                <form class="grid grid-cols-1 gap-6 rounded-xl shadow">
+                    <input type="text" placeholder="Nama"
+                        class="border rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+                    <input type="email" placeholder="Email"
+                        class="border rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+                    <textarea rows="4" placeholder="Pesan"
+                        class="border rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                    <button type="submit" class="bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition">
+                        Kirim Pesan
+                    </button>
+                </form>
+            </div>
+            <div class="flex-1">
+                <p class="font-bold">Contact Info</p>
+                <div class="text-gray-300 ">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga odio
+                    beatae molestias illo, officia itaque quas sit rem pariatur doloremque facilis, illum possimus
+                    ipsa ad delectus debitis in nulla dicta.</div>
+                <div class="text-gray-300"><i class="ph ph-map-pin pe-2"></i>Sananwetan, Kota blitar</div>
+                <div class="text-gray-300"><i class="ph ph-envelope pe-2"></i>irhamizza21@gmail.com</div>
+                <div class="text-gray-300"><i class="ph ph-phone pe-2"></i>089536718667</div>
+            </div>
+        </section>
+
 
     </div>
     <script>
